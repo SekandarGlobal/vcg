@@ -1208,11 +1208,19 @@ body {
   .utility-bar .container {
     flex-direction: column;
     gap: var(--spacing-md);
+    padding: var(--spacing-sm);
+  }
+  
+  .utility-left {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    text-align: center;
   }
   
   .utility-right {
     flex-wrap: wrap;
     justify-content: center;
+    gap: var(--spacing-sm);
   }
   
   .main-nav {
@@ -1223,22 +1231,58 @@ body {
     display: flex;
   }
   
+  .hero {
+    min-height: 60vh;
+  }
+  
   .hero-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    padding: 0 var(--spacing-md);
   }
   
   .hero-buttons {
     flex-direction: column;
     align-items: center;
+    gap: var(--spacing-md);
   }
   
   .hero-stats {
     grid-template-columns: 1fr;
     gap: var(--spacing-md);
+    padding: var(--spacing-md);
+  }
+  
+  .stat-item {
+    padding: var(--spacing-md);
+  }
+  
+  .stat-number {
+    font-size: 1.8rem;
+  }
+  
+  .stat-label {
+    font-size: 0.75rem;
+  }
+  
+  .invest-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: var(--spacing-xl);
   }
   
   .invest-features {
     grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .feature-card {
+    padding: var(--spacing-lg);
+  }
+  
+  .security-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
   }
   
   .security-features {
@@ -1249,18 +1293,78 @@ body {
   .trust-badges {
     flex-direction: row;
     justify-content: center;
+    gap: var(--spacing-md);
+  }
+  
+  .badge-item {
+    padding: var(--spacing-md);
+    min-width: 120px;
+  }
+  
+  .badge-rating {
+    font-size: 1.5rem;
   }
   
   .smart-trading-cards {
     grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .smart-card {
+    margin: 0 var(--spacing-sm);
+  }
+  
+  .market-widget {
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+  }
+  
+  .market-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-sm);
+  }
+  
+  .market-tab {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 0.875rem;
   }
   
   .market-prices {
     grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+  
+  .price-item {
+    padding: var(--spacing-sm);
+    font-size: 0.875rem;
+  }
+  
+  .market-chart {
+    height: 200px;
+  }
+  
+  .economic-calendar {
+    margin-top: var(--spacing-lg);
+  }
+  
+  .calendar-item {
+    padding: var(--spacing-sm);
+    font-size: 0.75rem;
+  }
+  
+  .ib-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
   }
   
   .ib-benefits {
     grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .benefit-item {
+    padding: var(--spacing-lg);
   }
   
   .process-steps {
@@ -1272,13 +1376,66 @@ body {
     display: none;
   }
   
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  
   .footer-content {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: var(--spacing-lg);
+  }
+  
+  .footer-column {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .footer-column h4 {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .footer-column ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-md);
+  }
+  
+  .footer-column li {
+    margin: 0;
+  }
+  
+  .contact-info p {
+    justify-content: center;
+    font-size: 0.875rem;
   }
   
   .app-buttons {
     justify-content: center;
+    gap: var(--spacing-sm);
+  }
+  
+  .app-button {
+    padding: var(--spacing-sm);
+    font-size: 0.75rem;
+  }
+  
+  .footer-bottom {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: var(--spacing-lg);
+  }
+  
+  .footer-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+  }
+  
+  .footer-links a {
+    font-size: 0.75rem;
   }
 }
 
@@ -1288,25 +1445,221 @@ body {
   }
   
   .hero-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    padding: 0 var(--spacing-sm);
   }
   
   .section-header h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    line-height: 1.3;
   }
   
-  .mega-menu-content {
-    grid-template-columns: 1fr;
-    min-width: 300px;
+  .section-header p {
+    font-size: 1rem;
+    padding: 0 var(--spacing-sm);
   }
   
-  .tabs-nav {
-    flex-direction: column;
-    align-items: center;
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
   }
   
-  .market-tabs {
-    flex-wrap: wrap;
-    justify-content: center;
+  .stat-number {
+    font-size: 1.5rem;
+  }
+  
+  .stat-label {
+    font-size: 0.7rem;
+  }
+  
+  .feature-card {
+    padding: var(--spacing-md);
+    margin: 0 var(--spacing-xs);
+  }
+  
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .feature-card p {
+    font-size: 0.8rem;
+  }
+  
+  .instrument-card {
+    padding: var(--spacing-md);
+    margin: 0 var(--spacing-xs);
+  }
+  
+  .card-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  
+  .instrument-card h4 {
+    font-size: 1rem;
+  }
+  
+  .instrument-card p {
+    font-size: 0.8rem;
+  }
+  
+  .security-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+  
+  .security-item h3 {
+    font-size: 1rem;
+  }
+  
+  .security-item p {
+    font-size: 0.8rem;
+  }
+  
+  .badge-item {
+    padding: var(--spacing-sm);
+    min-width: 100px;
+  }
+  
+  .badge-rating {
+    font-size: 1.2rem;
+  }
+  
+  .badge-platform {
+    font-size: 0.8rem;
+  }
+  
+  .payment-logo {
+    padding: var(--spacing-md);
+    margin: 0 var(--spacing-xs);
+  }
+  
+  .payment-logo i {
+    font-size: 1.5rem;
+  }
+  
+  .payment-logo span {
+    font-size: 0.8rem;
+  }
+  
+  .smart-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+  
+  .smart-card-header h3 {
+    font-size: 1.2rem;
+  }
+  
+  .smart-card-content p {
+    font-size: 0.9rem;
+  }
+  
+  .smart-card-content .btn {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .market-widget {
+    padding: var(--spacing-md);
+  }
+  
+  .market-tab {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 0.75rem;
+  }
+  
+  .price-item {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 0.75rem;
+  }
+  
+  .market-chart {
+    height: 150px;
+  }
+  
+  .economic-calendar h4 {
+    font-size: 1rem;
+  }
+  
+  .calendar-item {
+    padding: var(--spacing-xs);
+    font-size: 0.7rem;
+  }
+  
+  .benefit-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  
+  .benefit-item h3 {
+    font-size: 1rem;
+  }
+  
+  .benefit-item p {
+    font-size: 0.8rem;
+  }
+  
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  
+  .step-content h4 {
+    font-size: 0.9rem;
+  }
+  
+  .step-content p {
+    font-size: 0.75rem;
+  }
+  
+  .ib-process h3 {
+    font-size: 1.2rem;
+  }
+  
+  .ib-process .btn {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .footer-column h4 {
+    font-size: 1rem;
+  }
+  
+  .footer-column a {
+    font-size: 0.8rem;
+    padding: var(--spacing-xs);
+  }
+  
+  .contact-info p {
+    font-size: 0.8rem;
+  }
+  
+  .app-button {
+    padding: var(--spacing-xs);
+    font-size: 0.7rem;
+  }
+  
+  .regulatory-info p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  
+  .footer-links a {
+    font-size: 0.7rem;
+    padding: var(--spacing-xs);
   }
 }
